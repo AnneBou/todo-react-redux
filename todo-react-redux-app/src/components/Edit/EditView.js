@@ -7,6 +7,7 @@ const EditView = () => {
       <EditButton
         style={{ width: '150px' }}
       >
+        Edit
       </EditButton>
     </div>
   );

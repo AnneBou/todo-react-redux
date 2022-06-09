@@ -7,7 +7,6 @@ const CreateView = () => {
       <CreateInput
         style={{ width: '150px' }}
       >
-        My task
       </CreateInput>
     </div>
   );

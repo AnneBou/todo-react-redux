@@ -7,6 +7,7 @@ const DeleteView = () => {
       <DeleteButton
         style={{ width: '150px' }}
       >
+        Delete
       </DeleteButton>
     </div>
   );
