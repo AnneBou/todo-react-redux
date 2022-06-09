@@ -1,18 +1,15 @@
 import { useState } from 'react';
+import { EditButton } from '../../utils/ui/CustomizedComponents';
 
-const DeleteView = () => {
+const EditView = () => {
   return (
-    <>
-      <div>
-        <DeleteButton
-          style={{ width: '150px' }}
-          onClick={popupQuit.onConfirm}
-        >
-          {t('exercises.quit')}
-        </DeleteButton>
-      </div>
-    </>
+    <div>
+      <EditButton
+        style={{ width: '150px' }}
+      >
+      </EditButton>
+    </div>
   );
 };
 
-export default DeleteView;
+export default EditView;

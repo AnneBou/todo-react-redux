@@ -1,17 +1,14 @@
 import { useState } from 'react';
+import { DeleteButton } from '../../utils/ui/CustomizedComponents';
 
 const DeleteView = () => {
   return (
-    <>
-      <div>
-        <DeleteButton
-          style={{ width: '150px' }}
-          onClick={popupQuit.onConfirm}
-        >
-          {t('exercises.quit')}
-        </DeleteButton>
-      </div>
-    </>
+    <div>
+      <DeleteButton
+        style={{ width: '150px' }}
+      >
+      </DeleteButton>
+    </div>
   );
 };
 

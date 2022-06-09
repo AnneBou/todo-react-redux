@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
-import { deleteTask } from '../../redux/actions/TodoActions';
-import DeleteView from './DeleteView';
+import { editTask } from '../../redux/actions/TodoActions';
+import EditView from './DeleteView';
 
 const mapStateToProps = (state) => ({
-  deleteTask: state.deleteTask
+  editTask: state.editTask
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  deleteTask: (data) => deleteTask(dispatch, data)
+  editTask: (data) => editTask(dispatch, data)
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(DeleteView);
+export default connect(mapStateToProps, mapDispatchToProps)(EditView);

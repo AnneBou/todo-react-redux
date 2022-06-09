@@ -1,18 +1,16 @@
 import { useState } from 'react';
+import { CreateInput } from '../../utils/ui/CustomizedComponents';
 
-const DeleteView = () => {
+const CreateView = () => {
   return (
-    <>
-      <div>
-        <DeleteButton
-          style={{ width: '150px' }}
-          onClick={popupQuit.onConfirm}
-        >
-          {t('exercises.quit')}
-        </DeleteButton>
-      </div>
-    </>
+    <div>
+      <CreateInput
+        style={{ width: '150px' }}
+      >
+        My task
+      </CreateInput>
+    </div>
   );
 };
 
-export default DeleteView;
+export default CreateView;
