@@ -9,27 +9,32 @@ const ReadView = ({ values, createTask }) => {
         <div className="App">
       <header className="App-header">
         <h1>To-do-list</h1>
-        <CreateInput />
-        <table>
-          <thead>
-            <tr>
-              <th>Tasks</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-                values.values.map((v) => {
-                    return(
-                        <tr>
-                            <td>{ v }</td>
-                            <td><EditButton /> <DeleteButton /></td>
-                        </tr>
-                    );
-                })
-            }
-          </tbody>
-        </table>
+        <section>
+          <CreateInput />
+        </section>
+        <br />
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>Tasks</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                  values.values.map((v) => {
+                      return(
+                          <tr>
+                              <td>{ v }</td>
+                              <td><EditButton /> <DeleteButton /></td>
+                          </tr>
+                      );
+                  })
+              }
+            </tbody>
+          </table>
+        </section>
       </header>
     </div>
   );

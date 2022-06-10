@@ -3,17 +3,21 @@ import Button from '@mui/material/Button';
 import Input from '@mui/material/Input';
 import { red } from '@mui/material/colors';
 import { green } from '@mui/material/colors';
-import { amber } from '@mui/material/colors';
+import { blue } from '@mui/material/colors';
 
 const CreateInput = styled(Input)(({ theme }) => ({
-  color: theme.palette.getContrastText(amber[900]),
+  height: '35px'
+}));
+
+const SubmitButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.getContrastText(blue[900]),
   height: '35px',
-  backgroundColor: amber[900],
+  backgroundColor: blue[900],
   '&:focus': {
     outline: 'none'
   },
   '&:hover': {
-    backgroundColor: amber[700]
+    backgroundColor: blue[700]
   }
 }));
 
@@ -43,6 +47,7 @@ const EditButton = styled(Button)(({ theme }) => ({
 
 export {
   CreateInput,
+  SubmitButton,
   DeleteButton,
   EditButton
 };

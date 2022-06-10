@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CreateInput } from '../../utils/ui/CustomizedComponents';
+import { CreateInput, SubmitButton } from '../../utils/ui/CustomizedComponents';
 
 const CreateView = (props) => {
 
@@ -19,9 +19,10 @@ const CreateView = (props) => {
         type='text'
         onChange={onChange}
         name='task'
+        placeholder='Add a task here'
         style={{ width: '150px' }}
       />
-      <button onClick={submit}>Add</button>
+      <SubmitButton onClick={submit}>Add</SubmitButton>
     </div>
   );
 

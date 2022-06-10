@@ -14,9 +14,11 @@ export const todoSlice = createSlice({
     },
 
     editTask: (state, action) => {
+      state.values.push(action.payload);
     },
 
-    deleteTask: (state) => {
+    deleteTask: (state, action) => {
+      state.values.push(action.payload);
     }
   }
 });
